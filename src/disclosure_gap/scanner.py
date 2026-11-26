@@ -13,6 +13,7 @@ USER_AGENT = f"disclosure-gap/{__version__} (+{REPO_URL})"
 PATHS = ("/.well-known/security.txt", "/security.txt")
 MAX_BYTES = 64 * 1024
 MAX_RETRY_AFTER = 60
+HOST_DOWN = {"dns", "connect", "timeout", "tls"}
 
 
 class HostLimiter:
@@ -117,6 +118,8 @@ async def check_domain(client, limiter, domain, now=None):
             got = await fetch(client, limiter, url)
         except Exception as exc:
             errors.append(classify_error(exc))
+            if errors[-1] in HOST_DOWN:
+                break
             continue
         if got is None:
             continue

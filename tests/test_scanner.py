@@ -66,6 +66,7 @@ def test_timeout_classified():
     respx.get("https://t.gov/security.txt").mock(side_effect=httpx.ReadTimeout("slow"))
     [r] = run(["t.gov"])
     assert r["error"] == "timeout"
+    assert respx.calls.call_count == 1
 
 
 @respx.mock
