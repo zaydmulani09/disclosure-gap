@@ -1,0 +1,43 @@
+{
+  "country": "uk",
+  "name": "United Kingdom (.gov.uk)",
+  "total": 7913,
+  "reachable": 6334,
+  "unreachable": 1579,
+  "unreachable_reasons": {
+    "dns": 705,
+    "timeout": 404,
+    "tls": 321,
+    "connect": 140,
+    "too_many_redirects": 6,
+    "readerror": 2,
+    "remoteprotocolerror": 1
+  },
+  "with_file": 199,
+  "compliant": 71,
+  "missing": 6135,
+  "html_200_soft_404": 649,
+  "blocked_401_403_429": 1328,
+  "adoption_pct_excluding_blocked": 4.0,
+  "legacy_path_only": 8,
+  "adoption_pct_of_reachable": 3.1,
+  "adoption_pct_of_total": 2.5,
+  "compliant_pct_of_files": 35.7,
+  "compliant_pct_of_reachable": 1.1,
+  "checks": {
+    "has_contact": 198,
+    "has_expires": 188,
+    "expires_valid": 159,
+    "expired": 28,
+    "expires_too_far": 60,
+    "plain_http": 1,
+    "meets_musts": 130,
+    "has_canonical": 24,
+    "has_encryption": 14,
+    "has_policy": 143,
+    "has_languages": 63,
+    "signed": 1
+  },
+  "started_at": "2026-11-26T17:41:01+00:00",
+  "finished_at": "2026-11-26T18:09:52+00:00"
+}

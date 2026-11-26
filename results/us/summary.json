@@ -1,0 +1,43 @@
+{
+  "country": "us",
+  "name": "United States (federal .gov)",
+  "total": 1320,
+  "reachable": 926,
+  "unreachable": 394,
+  "unreachable_reasons": {
+    "dns": 244,
+    "timeout": 82,
+    "tls": 55,
+    "readerror": 5,
+    "too_many_redirects": 4,
+    "connect": 3,
+    "remoteprotocolerror": 1
+  },
+  "with_file": 47,
+  "compliant": 20,
+  "missing": 879,
+  "html_200_soft_404": 265,
+  "blocked_401_403_429": 161,
+  "adoption_pct_excluding_blocked": 6.1,
+  "legacy_path_only": 12,
+  "adoption_pct_of_reachable": 5.1,
+  "adoption_pct_of_total": 3.6,
+  "compliant_pct_of_files": 42.6,
+  "compliant_pct_of_reachable": 2.2,
+  "checks": {
+    "has_contact": 46,
+    "has_expires": 43,
+    "expires_valid": 43,
+    "expired": 12,
+    "expires_too_far": 10,
+    "plain_http": 0,
+    "meets_musts": 30,
+    "has_canonical": 13,
+    "has_encryption": 10,
+    "has_policy": 33,
+    "has_languages": 19,
+    "signed": 0
+  },
+  "started_at": "2026-11-26T03:19:29+00:00",
+  "finished_at": "2026-11-26T03:22:40+00:00"
+}

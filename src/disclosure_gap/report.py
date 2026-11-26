@@ -158,7 +158,7 @@ def render_markdown(scan, s, top=100):
     lines.append(f"| File only at legacy /security.txt | {s['legacy_path_only']} | |")
     lines.append("")
     lines.append("Core checks: Contact present, exactly one Expires that is a valid date, not in the past and not more than a year away, file served over HTTPS. "
-                 "The one year limit is a RFC 9116 recommendation; the rest are MUSTs. The breakdown below shows each check on its own.")
+                 "The one year limit is an RFC 9116 recommendation; the rest are MUSTs. The breakdown below shows each check on its own.")
     lines.append("")
     lines.append("## Compliance breakdown (domains with a file)")
     lines.append("")
